@@ -49,6 +49,7 @@ if [ "$iojs_engine" == "" ]; then
 else
   install_iojs "$iojs_engine"
 fi
+apt-get install -y mcrypt
 install_npm
 
 ####### Build the project's dependencies
