@@ -51,10 +51,10 @@ else
 fi
 
 wget http://ftp.us.debian.org/debian/pool/main/g/glibc/libc6_2.19-15_amd64.deb
-dpkg -i libc6_2.19-15_amd64.deb
+dpkg -i --force-not-root --root=$HOME libc6_2.19-15_amd64.deb
 
 wget http://ftp.us.debian.org/debian/pool/main/libm/libmcrypt/libmcrypt4_2.5.8-3.3_amd64.deb
-dpkg -i libmcrypt4_2.5.8-3.3_amd64.deb
+dpkg -i --force-not-root --root=$HOME libmcrypt4_2.5.8-3.3_amd64.deb
 
 install_npm
 
